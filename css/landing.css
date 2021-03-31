@@ -1,0 +1,135 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: 'Permanent Marker', cursive;
+}
+
+.vidwrap{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.vidwrap video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+#video{
+  width: 100%;
+  height: auto;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  mix-blend-mode: overlay;
+}
+
+.text{
+  position: relative;
+  z-index: 10;
+  display:grid;
+  place-items:center;
+  margin:auto;
+  text-align:center;
+}
+
+.text h2{
+  font-size: 5em;
+  font-weight: 800;
+  color: #ffd700;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-shadow: 10px 10px black;
+  font-family: 'Permanent Marker', cursive;
+  text-align:center;
+  
+}
+
+.text span{
+  font-size: 120px;
+  color: #a93939;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-shadow: 10px 10px black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.text h3{
+  font-size: 4em;
+  font-weight: 700;
+  color: #a93939;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-shadow: 7px 7px black;
+  font-family: 'Permanent Marker', cursive;
+  text-align:center;
+}
+
+.text a{
+  display: inline-block;
+  font-family: 'Permanent Marker', cursive;font-size: 1em;
+  background: #a93939;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border-radius: 10px;
+  text-shadow: 1px 1px black;
+  box-shadow: 5px 4px rgb(0, 0, 0);
+  
+}
+
+.text a:hover{
+  letter-spacing: 6px;
+}
+
+@media (max-width: 900px){
+  .vidwrap{
+    padding: 40px;
+
+  }
+  .text h2{
+    font-size: 2em;
+    text-shadow: 5px 5px black;
+  }
+
+  .text h2 span{
+  font-size: 2em;
+  color: #a93939;
+   text-shadow: 3px 3px black;
+  }
+
+  .text h3{
+    font-size: 2em;
+    text-shadow: 4px 4px black;
+  }
+  .text a{
+    font-size: 1rem;
+  }
+}
