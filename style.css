@@ -13,7 +13,7 @@ header{
 
 html {
 	scroll-behavior: smooth;
-	transition: .2ms;
+	transition: .5ms;
 }
 
 .navbar{
@@ -52,8 +52,7 @@ html {
 .navbar-light .navbar-nav .nav-item .nav-link{
 	background: rgba(0,0,0, 0.8);
 	color:#a93939;
-	padding:10px 10px;
-	
+	padding:10px 20px;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover{
@@ -138,6 +137,13 @@ html {
 	background-image: url(img/007.jpg);
 	
 }
+
+
+#indexPage li{
+	background-color:#ffd700;
+}
+
+
 
 /*story section*/
 
