@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta author="Coding.bn-pod7">
+	<title>HoneyXButter</title>
+	<link rel = "icon" href = "img/logosmall.jpg" type = "image/x-icon">
+	<link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/menustyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script  src="js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light">
+  				<a class="navbar-brand" href="#"><h1>Honey<span>X</span>butter</h1></a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon rotate"></span>
+  				</button>
+
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav ml-lg-auto">
+      				<li class="nav-item active">
+        				<a class="nav-link" href="#indexPage">Home,<span class="sr-only">(current)</span></a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#story">Our Story,</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#menuPage">Menu,</a>
+      				</li>
+      				
+      				<li class="nav-item">
+        				<a class="nav-link" href="#findUs">Find Us,</a>
+      				</li>
+      				<li class="nav-item" id="feedbackNavi" data-toggle="modal" data-target="#feedbackModal">
+        				<a href="#id01">Any Feedback?!</a>
+      				</li>
+      				<button type="button" id="orderNowBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">ORDER NOW!</button>
+				</ul>		
+ 			</div>
+ 				
+			</nav>
+		</div>
+
+	</header>
+
+
+<section id="indexPage">
+	<div id="carouselslide" class="carousel slide carousel-fade" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselslide" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselslide" data-slide-to="1"></li>
+			<li data-target="#carouselslide" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div id="banner1" class="carousel-item active">
+				<div class="container" id="carou">
+					<h1 id="headfont" class="d-flex justify-content-center"><b>DIP IT!</b></h1>	
+				</div>
+			</div>
+			<div id="banner2" class="carousel-item">
+				<div class="container" id="carou">
+					<h1 id="headfont" class="d-flex justify-content-center"><b>SAUCE IT!</b></h1>	
+				</div>
+			</div>
+
+			<div id="banner3" class="carousel-item">
+				<div class="container" id="carou">
+					<h1 id="headfont" class="d-flex justify-content-center"><b>TOSS IT!</b></h1>
+				</div>
+			</div>
+		</div>
+			
+			<a href="#carouselslide" class="carousel-control-prev" role="button" data-slide="prev">
+				<span class="sr-only">Previous</span>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</a>
+			<a href="#carouselslide" class="carousel-control-next" role="button" data-slide="next">
+				<span class="sr-only">Next</span>
+				<span class="carousel-control-next-icon" style="color:#a93939;" aria-hidden="true"></span>
+			</a>
+
+	</div>
+</section>
+
+
+<section id="story">
+	<div class="container">
+
+        	<div class="row no-gutters justify-content-center"> <!--This is the first row-->
+           	 	<div class="col-lg-9 text-light pt-5">
+					<h1>The Story of Honey X Butter</h1>
+               		 <p class="para1">We are two friends who wanted to start a small 'Sambal' (chili paste) manufacturing business. While operating it homebased in 2018, we started to gain some loyal following. Our philosophy has always been simple, we care about creating delicious food that makes you, our familia, feel good. From 'Day-1', your feedbacks has alway been 'The King' to our growth. In fact, the existence of Honey X Butter was simply because of you all, whom requested for us to create a chicken dish...</p>			
+            	</div>	
+			</div>		<!--End of the first row-->
+
+			<div class="row no-gutters" > <!--This is the second row-->	
+            	<div  class="col-lg-6" data-aos="fade-down">
+                	<img src="img/009.jpg" class="img-fluid"  alt="HoneyXButter Logo">			
+           		 </div>	
+				<div  class="col-lg-6" id="sStory">
+					<h2>Adjusting to The Local Taste </h2>
+                	<p class="para">We crafted a double-fry battered chicken to produce that right amount of crunch using our secret dry-mixture. So then we glazed it with our signature sauce to create that sweet yet savoury taste,that makes you keep wanting to come again. In general, Yes! asians like spicy food. Hence we created our Extra-Spicy Honey Butter sauce that alwasy caught our daring customers off-guard.</p>
+           		</div>
+      		</div>	<!--End of the second row-->
+		
+        <div class="row no-gutters flex-column-reverse flex-lg-row"><!--This is the third row-->	
+            <div  class="col-lg-6" id="sStory">
+				<h2>Our Short Cameo at Jerudong Park Foodcourt</h2>
+                <p class="para">in November 2020, We were lucky to be invited by jerudong Park Management to operate at their foodcourt. Which quickly, we took it as part of our pilot project. That short 3 months enable us to tweak our recipes to our customers liking, learn about running a food & beverages business and most importantly, to getting to know you all. </p>			
+            </div>	
+            <div  class="col-lg-6" data-aos="fade-up">
+                <img src="img/partners.jpg" class="img-fluid"  alt="HoneyXButter Logo">				
+            </div>
+        </div> <!--End of the third row-->
+
+
+        <div class="row no-gutters"> <!--This is the fourth row-->
+			<div  class="col-lg-6" data-aos="fade-down">
+                <img src="img/babychick.jpg"  class="img-fluid" alt="HoneyXButter Logo">			
+            </div>	
+            <div  class="col-lg-6" id="sStory">
+                <h2>Keeping that 'Halal' gap</h2>
+                <p class="para">Our chicken is 100% Bruneian and proudly certified 'Halal' by MORA. We also take a serious attention to our food preparation method and hygiene, for your health and safety.</p>					
+            </div>	
+        </div>	<!--End of the fourth row-->
+
+	
+		<div class="row no-gutters flex-column-reverse flex-lg-row" ><!--This is the fifth row-->	
+            <div  class="col-lg-6" id="sStory">
+				<h2>Community</h2>
+                <p class="para">We treat our customers like family. We try hard to remember every faces of our returning customers, and to prepare their foods according to each of their unique preferences. Any feedback are most welcome. We understand that every choice we make today affects all of us tomorrow. That’s why we are committed to making a positive difference.</p>					
+            </div>	
+            <div  class="col-lg-6" data-aos="fade-up">
+                <img src="img/family.jpg"  class="img-fluid" alt="HoneyXButter Logo">				
+            </div>
+        </div>
+         <!--End of the fifth row-->
+    </div>
+<section>
+
+
+
+<section id="menuPage">
+
+<div class="container-fluid justify-content-center"  style="background-color: #a93939;">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 p-5">
+            <h3>Our <span id="signature">Menu<span></h3>
+            <img id="menujpg" src="img/menu.jpg" class="img-fluid justify-content-center">
+            <button class="menuDownload" onclick="save()">Download Menu</i></button>
+        </div>
+    </div>
+            
+        <div class="row justify-content-center">
+<!--order button--><button  id="orderNowBtn" type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" href="#myModal">ORDER NOW!</button>
+        </div>
+
+            <h3 class="pt-5"> Our <span id=signature>Signature</span> sauces</h3>
+		
+    <div class="container pt-0 pb-5" id="colShowcase"><!--showcase-->
+        <div class="box">
+            <img src="img/005L.jpg" class="img-fluid mx-auto d-block">
+            <span class="text-light">Honey Butter</span>
+        </div>
+        <div class="box">
+            <img src="img/005C.jpg" class="img-fluid mx-auto d-block">
+            <span class="text-light">Spicy HxB</span>
+        </div>
+        <div class="box">
+            <img src="img/005R.jpg" class="img-fluid mx-auto d-block">
+            <span class="text-light">Extra Spicy HxB</span>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="popup-btn" id="feedbackFixed" data-toggle="modal" data-target="#feedbackModal">
+			<a href="#id01">Any Feedback?!</a>
+		</div>
+	</div>
+</div>
+
+
+<!-- MODALS COMPONENTS-->
+<!--modal to open modals-->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+      	<h4 class="modal-title text-white" id="myModalLabel">Pick Your Method:</h4> 
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <button  id="orderNowBtn" type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" href="#cartModal">Pick-up</button>
+        <hr/>
+        <button  id="orderNowBtn" type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" data-target="#delivery">Delivery</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark text-white" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--delivery modal starts here-->
+<div class="modal fade" id="delivery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+      	<h4 class="modal-title text-white" id="myModalLabel">Pick your service:</h4>
+      </div>
+      <div class="modal-body d-flex justify-content-center">  	
+       	<a href="https://www.ta-pow.com/" target="_blank"><img src="img/tapow.jpg" alt="ta-pow"></a>
+       	<hr/>
+       	<a href="https://www.gomamam.com/" target="_blank"><img src="img/gomamam.jpg" alt="Gomamam"></a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--cart modal starts here-->
+		<div class="modal fade bd-example-modal-xl" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                        <div class="modal-header">
+        <h4 class="modal-title">Pick Your Order:</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+                        <div class="container-fluid body-container">
+
+
+                            <section id="menu-page">
+                                <div class="container p-0">
+                                    <div class="row justify-content-center">
+                                        <h1>MENU</h1>                                        
+                                    </div>
+                                    <div class="row justify-content-center text-light">
+                                    	<p> &#x1F6C8; Click or hover over the picture to order.</p>
+                                        <hr />
+                                    </div>
+                                    <div class="row justify-content-center set-banner">
+                                        <h2>SET</h2>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <hr />
+                                        <h2>Fried Chicken</h2>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <h3>Thigh & Drumstick parts</h3>
+                                        <hr />
+                                    </div>
+                                    <div class="row justify-content-center">
+
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/001.png" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-1" value="Set 3 Pcs">Set 3 Pcs</h3>
+                                                <p>with Honey Butter Sauce</p>
+                                                <form id="set-type">
+                                                    <label for="set">Set:</label>
+                                                    <select name="food-set-1" id="set-hb1">
+                                                        <option value="1">with Rice @ $5.00</option>
+                                                        <option value="2">with Fries @ $5.00</option>
+                                                        <option value="3">A la carte @ $4.30</option>
+                                                    </select>
+                                                </form>
+                                                <hr>
+                                                <form id="add-form-1">
+                                                    <input type="submit" class="btn add-to-cart" onclick="addCart1();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/002.png" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-2" value="Set 3 Pcs">Set 3 Pcs</h3>
+                                                <p>with Spicy Honey Butter Sauce</p>
+                                                <form id="set-type">
+                                                    <label for="set">Set:</label>
+                                                    <select name="food-set-2" id="set-shb1">
+                                                        <option value="1">with Rice @ $5.00</option>
+                                                        <option value="2">with Fries @ $5.00</option>
+                                                        <option value="3">A la carte @ $4.30</option>
+                                                    </select>
+                                                </form>
+                                                <hr>
+                                                <form id="add-form-2">
+                                                    <input type="submit" class="btn add-to-cart" onclick="addCart2();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/003.png" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-3" value="Set 3 Pcs">Set 3 Pcs</h3>
+                                                <p>with Extra Spicy Honey Butter Sauce</p>
+                                                <form id="set-type">
+                                                    <label for="set">Set:</label>
+                                                    <select name="food-set-3" id="set-xshb1">
+                                                        <option value="1">with Rice @ $5.00</option>
+                                                        <option value="2">with Fries @ $5.00</option>
+                                                        <option value="3">A la carte @ $4.30</option>
+                                                    </select>
+                                                </form>
+
+                                                <hr>
+                                                <form id="add-form-3">
+                                                    <input type="submit" class="btn add-to-cart" onclick="addCart3();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- END ROW 1 -->
+                                    <!-- ROW 2 -->
+                                    <div class="row justify-content-center">
+                                        <hr />
+                                        <h2>Chicken Wings</h2>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <h3>Drummetes & Wings parts</h3>
+                                        <hr />
+                                    </div>
+                                    <div class="row justify-content-center">
+
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/009b.jpg" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-4" value="Set 4 Cuts">Set 4 Cuts</h3>
+                                                <p>4 Cuts of tasty chicken wings and drumettes</p>
+                                                <form id="set-type">
+                                                    <label for="set">Set:</label>
+                                                    <select name="food-set-4" id="set-4-choice">
+                                                        <option value="1">with Rice @ $5.20</option>
+                                                        <option value="2">with Fries @ $5.20</option>
+                                                        <option value="3">A la carte @ $4.40</option>
+                                                    </select>
+                                                </form>
+
+                                                <hr>
+                                                <form id="sauce-type">
+                                                    <label for="sauce">Sauce:</label>
+                                                    <select name="sauce-name" id="set-4-sauce">
+                                                        <option value="1">Honey Butter</option>
+                                                        <option value="2">Spicy Honey Butter</option>
+                                                        <option value="3">Extra Spicy Honey Butter</option>
+                                                    </select>
+                                                </form>
+                                                <hr>
+
+                                                <form id="add-form-4">
+                                                    <input type="submit" class="btn add-to-cart" onclick="addCart4();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/011.jpg" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-5" value="Set 6 Cuts">Set 6 Cuts</h3>
+                                                <p>6 Cuts of tasty chicken wings and drumettes</p>
+                                                <form id="set-type">
+                                                    <label for="set">Set:</label>
+                                                    <select name="food-set" id="set-5-choice">
+                                                        <option value="1">with Rice @ $7.00</option>
+                                                        <option value="2">with Fries @ $7.00</option>
+                                                        <option value="3">A la carte @ $6.30</option>
+                                                    </select>
+                                                </form>
+
+                                                <hr>
+                                                <form id="sauce-type">
+                                                    <label for="sauce">Sauce:</label>
+                                                    <select name="sauce-name" id="set-5-sauce">
+                                                        <option value="1">Honey Butter</option>
+                                                        <option value="2">Spicy Honey Butter</option>
+                                                        <option value="3">Extra Spicy Honey Butter</option>
+                                                    </select>
+                                                </form>
+                                                <hr>
+                                                <form id="add-form-5">
+                                                    <input type="submit" class="btn add-to-cart" onclick="addCart5();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END ROW 2 -->
+                                    <!-- ROW 3 -->
+                                    <div class="row justify-content-center">
+                                        <hr />
+                                        <h2>Tray Pre-Order *</h2>
+                                        <hr />
+                                        <h5>Contact <span style="color:#ffcccc; font-weight:bold">8819271</span> at least 2 days early.</h5>
+
+                                    </div>
+
+                                    <div class="row justify-content-center">
+
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/017.jpg" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-tray1" value="tray30">30 Cuts + 3 extra cuts</h3>
+                                                <p>$30 per tray</p>
+                                                <hr>
+                                                <form id="sauce-type">
+                                                    <label for="sauce">Sauce:</label>
+                                                    <select name="sauce-name" id="tray1-sauce">
+                                                        <option value="1">Honey Butter</option>
+                                                        <option value="2">Spicy Honey Butter</option>
+                                                        <option value="3">Extra Spicy Honey Butter</option>
+                                                    </select>
+                                                </form>
+                                                <hr>
+                                                <form id="add-form-6">
+                                                    <input type="submit" class="btn btn-sm add-to-cart" onclick="addCart6();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/010.jpg" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-tray2" value="fries-tray">Honey Butter Fries</h3>
+                                                <p>$15 per tray</p>
+                                                <hr>
+
+                                                <form id="add-form-7">
+                                                    <input type="submit" class="btn btn-sm add-to-cart" onclick="addCart7();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--END ROW 3 -->
+                                    <!-- ROW 4 -->
+                                    <div class="row justify-content-center">
+                                        <hr />
+                                        <h2>Extras / Side Dishes</h2>
+                                        <hr />
+
+                                    </div>
+
+                                    <div class="row justify-content-center">
+
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/rice.jpg" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-side1">Rice</h3>
+                                                <p>$1 per bowl</p>
+                                                <hr>
+                                                <form id="add-form-8">
+                                                    <input type="submit" class="btn btn-sm add-to-cart" onclick="addCart8();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/010.jpg" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-side2">Fries</h3>
+                                                <p>$1 per bowl</p>
+                                                <hr>
+                                                <form id="add-form-9">
+                                                    <input type="submit" class="btn btn-sm add-to-cart" onclick="addCart8();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item col-sm-4">
+                                            <img src="img/sauces.jpg" />
+                                            <div class="menu-overlay">
+                                                <h3 id="food-item-sauce" value="sauce">Extra HxB Sauce</h3>
+                                                <p>50c</p>
+                                                <hr>
+                                                <form id="sauce-type">
+                                                    <label for="sauce">Sauce:</label>
+                                                    <select name="sauce-name" id="extra-sauce">
+                                                        <option value="1">Honey Butter</option>
+                                                        <option value="2">Spicy Honey Butter</option>
+                                                        <option value="3">Extra Spicy Honey Butter</option>
+                                                    </select>
+                                                </form>
+                                                <hr>
+                                                <form id="add-form-10">
+                                                    <input type="submit" class="btn btn-sm add-to-cart" onclick="addCart10();" value="Order">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--END ROW 4 -->
+                                </div>
+
+                            </section>
+
+                            <section id="cart">
+                                <div class="container m-1 pb-1 pt-1">
+                                    <div class="row ">
+                                        <h3>Your order:</h3>
+                                    </div>
+                                    <div class="row justify-content-start">
+                                        <div class="col-sm-8 must-inline">
+                                            <h4>Food</h4>
+                                        </div>
+                                        <div class="col-sm-2 must-inline">
+                                            <h4>Qty</h4>
+                                        </div>
+                                        <div class="col-sm-2 d-none d-md-block">
+                                            <h4>$</h4>
+                                        </div>
+
+                                    </div>
+                                    <div class="row in-cart-items">
+                                        <div class="col-sm-8 must-inline">
+                                            <ul id="food-in-cart" class="cart-group m-0">
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 must-inline">
+                                            <ul id="qty-in-cart" class="cart-group m-0">
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-2 d-none d-md-block">
+                                            <ul id="price-in-cart" class="cart-group m-0 justify-content-start">
+                                            </ul>
+                                        </div>
+                                        <!--<div class="col-sm-1">
+                    <ul id="remove-in-cart" class="cart-group m-0">
+                    </ul>
+                </div>
+                -->
+                                    </div>
+                                    <div class="row mt-5">
+
+                                        <div class="col-sm-5">
+
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h4 id="total-price">Total Price: $0.00</h4>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <form id="add-form-11">
+                                                <input type="submit" class="btn clear-cart" onclick="clearOrder();" value="Cancel Order">
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <form id="add-form-12">
+                                                <input type="submit" class="btn confirm-cart" onclick="confirmOrder();" value="Check Out">
+                                            </form>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </section>
+
+                            <div class="placeholder p-2">
+
+                            </div>
+                        </div>
+
+
+<!--menu modal ends here-->
+
+<!-- END MENU -->
+</div>
+</div>
+</div>
+</section>
+<!--cart modal end here-->
+
+
+<!--feedback modal-->
+<div id="feedbackModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-center bg-dark text-white">
+                <h3>Any Feedback?!</h3>
+                 <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body text-center"> <i class="far fa-file-alt fa-4x mb-3 animated rotateIn icon1"></i>
+                <h3>Your opinion matters!</h3>
+                <h5>Help us improve our product?!</h5> 
+                <h5>Give us your feedback.</h5>
+                <hr>
+                <h5>Your overall rating:</h5>
+            </div>
+            <div class="form-check mb-4"> <input name="feedback" type="radio"> <label class="ml-3">Very good</label> </div>
+            <div class="form-check mb-4"> <input name="feedback" type="radio"> <label class="ml-3">Good</label> </div>
+            <div class="form-check mb-4"> <input name="feedback" type="radio"> <label class="ml-3">Mediocre</label> </div>
+            <div class="form-check mb-4"> <input name="feedback" type="radio"> <label class="ml-3">Bad</label> </div>
+            <div class="form-check mb-4"> <input name="feedback" type="radio"> <label class="ml-3">Very Bad</label> </div>
+            <div class="text-center">
+                <h4>What could we improve?</h4>
+            </div> <textarea type="textarea" placeholder="Your Message" rows="3"></textarea> <!-- Modal Footer-->
+            <div class="modal-footer d-flex justify-content-center"> <a onclick="submitFeedback();" class="btn btn-primary" data-toggle="modal" data-dismiss="modal">Submit</a> <a class="btn btn-outline-primary" data-dismiss="modal">Cancel</a> </div>
+        </div>
+    </div>
+</div>
+
+
+<section id="findUs">
+	<footer>
+		<div class=" footer">
+			<div class="container pb-1">
+				<div class="row">
+					<div class="col-lg-5 col-xs-12 mt-3 text-center">
+						<img src="img/logoWhite.png" width="200">
+						<h2><span>Honey</span> X <span>Butter</span></h2>
+						<p class="text-white text-center  pb-4" id="cPhrase">"Craving it?!"</p>
+						<ul class="social">
+							<li><a href="https://www.facebook.com/Sambal-Factory-Enterprise-104135248084163/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/honeyxbutter.bn/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-xs-12 links">
+						<h4 class="mt-lg-0 mt-sm-3">Quick Links</h4>
+						<ul class="m-0 p-0 list-unstyled" >
+							<li><a href="#indexPage">Home</a></li>
+							<li><a href="#story">Our Story</a></li>
+							<li><a href="#menuPage">Menu</a></li>
+							<li><a href="#findUs">Find Us</a></li>
+						</ul>
+						<br>
+						<h4 class="mt-lg-0 mt-sm-4">Find Us</h4>
+						<p><i class="fa fa-phone"><span id="contact">+673 (8)81 9271</span></i></p>
+						<p><i class="fa fa-envelope-open"> <span id="contact">sambalfactory@gmail.com</span></i></p>
+						<p><i class="fa fa-map-marker"> <a href="https://goo.gl/maps/T5memhWduWRi6y5F7" target="_blank"><span id="contact">Gerai 8, Jalan 17, Lambak Kanan</span></a></i></p>
+					</div>
+					<div class="col-lg-4 col-xs-12">
+						<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="50" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=4.96337742442004,114.95963394641876+(Honey%20X%20Butter)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col copyright text-center" id="copyright">
+						<p><small class="text-white text-center">All Rights Reserved &copy; Sambal Factory Enterprise 2021</small></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</footer>
+	
+</section>
+
+
+<!--the Aos animation-->
+<script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script  src="js/script.js"></script>
+<!--end of the Aos animation-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
