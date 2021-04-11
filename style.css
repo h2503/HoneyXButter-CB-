@@ -1,5 +1,6 @@
 body{
 	overflow-x: hidden;
+
 }
 /*start of header and nav bar*/
 header{
@@ -64,12 +65,35 @@ html {
 }
 
 .navbar-light .navbar-toggler{
-	border: none;
+	margin-top: 15px;
+	margin-right: 5px;
+	height:50px;
+	width:50px;
 	color: #fff;
 	border: 3px solid #a93939;
-	border-radius: 0;
-	outline: none;
+	border-radius: 10;
+	padding:0;
 }
+
+.navbar-toggler-icon{
+	background-image: url(img/chickenwing-toggler.png) !important;
+}
+
+
+
+/*icon rotate*/
+.rotate{
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.rotate.down{
+    -moz-transform:rotate(-360deg);
+    -webkit-transform:rotate(-360deg);
+    transform:rotate(-360deg);
+}
+
 
 /*end of Header and navbar css*/
 
@@ -82,7 +106,7 @@ html {
 	font-size:30px;
 	text-transform: uppercase;
 	font-family: 'Permanent Marker', cursive;
-	 text-shadow: 1px 1px black;
+	text-shadow: 1px 1px black;
 	padding: 10px 20px;
 	margin-top: 15px;
 }
@@ -98,6 +122,32 @@ html {
 
 .modal { 
 	overflow: auto !important; 
+}
+
+.popup-btn a{
+    top:68%;
+    position:fixed;
+    left:-82px;
+    z-index: 1000;
+    transform: rotate(-90deg);
+    background-color: red;
+    padding:10px 20px 35px;
+    height: 0px;
+    background-color: #ffd700;
+    color:#000;
+    font-size: 23px;
+    font-weight: bold;
+    border:1px solid #000;
+}
+.popup-btn a:hover{
+    text-decoration: none;
+    color:#fff;
+    background-color: #a93939;
+    border:1px solid #000;
+}
+
+#feedbackNavi, #feedbackNavi a{
+	display:none;
 }
 
 /*caraousel section*/
@@ -209,117 +259,7 @@ html {
 
 /*end of story*/
 
-/*start of media responsiveness*/
-@media (max-width: 990px){
-	
-	header{}
 
-	.nav-item{
-	font-weight: 800;
-	text-transform: uppercase;
-	font-size:25px;
-	font-family: 'Permanent Marker', cursive;
-	text-align: center;
-	margin-top: 0px;
-	}
-
-
-	
-	.navbar-brand h1{
-		font-size:25px;
-  	}
-
-	#orderNowBtn{
-	background-color:#ffd700;
-	border-color:#ffa500;
-	color:#a93939;
-	font-weight: bold;
-	font-size:25px;
-	text-transform: uppercase;
-	font-family: 'Permanent Marker', cursive;
-	padding: 10px 20px;
-	margin-top: 0px;
-}
-
-	.banner{
-		padding: 200px 0;
-	}
-
-	#story .col-lg-9{
-		padding-bottom: 20px;
-	}
-
-	#story .col-lg-6{
-		data-aos:none;
-	}
-
-	.banner h2{
-		font-size: 1.8em;
-	}
-	.navbar-collapse{
-	background: #fff;
-	}
-	.navbar-toggler{
-	background: #fff;
-	}
-	.navbar-brand img{
-		height: 100px;
-	}
-	span{
-		color: #000;
-	}
-
-	.carousel-item{
-	height: 50rem;
-	}
-
-	#headfont{
-	font-size: 4em;
-	text-transform: uppercase;
-	font-weight:900;
-	color: #fff;
-	}
-
-	#story h1{
-		font-size:40px;
-	}
-
-	#story h2{
-		font-size:30px;
-	}
-
-	#story p{
-		font-size:1rem;
-	}
-
-	#updown img{
-		display: content;
-	}
-	.banner h2{
-		font-size: 1.8em;
-	}
-
-	#menuPage .container{
-		flex-direction: column;
-	}
-
-
-	#findUs{
-		text-align: center;
-		align-items: center;
-		align-content: center;
-	}
-
-	#findUs h2{
-		text-align: center;
-		align-content: center;
-	}
-
-	#findUs p{
-		text-align: center;
-	}
-}
-/*end of media responsiveness*/
 
 /*start of column showcase*/
 #menuPage #colShowcase {
@@ -349,6 +289,26 @@ html {
 	display:grid;
 	place-items: center;
 }
+
+#menujpg{
+	width:30vw;
+}
+
+.menuDownload{
+	margin-top: 5px;
+    padding:3px 7px;
+    background-color: #ffd700;
+    color:#000;
+    font-size: 14px;
+    font-weight:bold;
+    border-radius: 5px;
+    border-color: #000;
+}
+.menuDownload:hover{
+    text-decoration: none;
+    border:1px solid;
+}
+
 
 #signature{
 	color:#ffd700;
@@ -482,8 +442,137 @@ footer{
 
 .footer .copyright {
 	font-size:1.3rem;
-	text-shadow: 1px 1px black;
 	border-top: 1px solid rgb(255,255,255,0.8);
 	border-bottom:1px solid rgb(255,255,255,0.8);
-	
 }
+
+.footer .copyright{
+	padding-top: 6px;
+	padding-bottom: -4px;
+}
+
+
+/*start of media responsiveness*/
+@media (max-width: 990px){
+	
+	header{
+		background-color: #000 !important;
+	}
+
+	.nav-item{
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size:25px;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	margin-top: 0px;
+	}
+
+	.navbar-brand h1{
+		font-size:25px;
+  	}
+
+
+  	#feedbackNavi, #feedbackNavi a{
+  		display:flex;
+  		justify-content: center;
+  		padding:5px 0px;
+  		color:#a93939;
+  		background-color: #000;
+  	}
+
+  	#feedbackFixed{
+  		display:none;
+  	}
+
+	#orderNowBtn{
+	background-color:#ffd700;
+	border-color:#ffa500;
+	color:#a93939;
+	font-weight: bold;
+	font-size:25px;
+	text-transform: uppercase;
+	font-family: 'Permanent Marker', cursive;
+	padding: 10px 20px;
+	margin-top: 0px;
+	}
+
+	.banner{
+		padding: 200px 0;
+	}
+
+	#story .col-lg-9{
+		padding-bottom: 20px;
+	}
+
+	#story .col-lg-6{
+		data-aos:none;
+	}
+
+	.banner h2{
+		font-size: 1.8em;
+	}
+	.navbar-collapse{
+	background: #fff;
+	}
+	.navbar-toggler{
+	background: #fff;
+	}
+	.navbar-brand img{
+		height: 100px;
+	}
+	span{
+		color: #000;
+	}
+
+	.carousel-item{
+	height: 50rem;
+	}
+
+	#headfont{
+	font-size: 4em;
+	text-transform: uppercase;
+	font-weight:900;
+	color: #fff;
+	}
+
+	#story h1{
+		font-size:40px;
+	}
+
+	#story h2{
+		font-size:30px;
+	}
+
+	#story p{
+		font-size:1rem;
+	}
+
+	#updown img{
+		display: content;
+	}
+	.banner h2{
+		font-size: 1.8em;
+	}
+
+	#menuPage .container{
+		flex-direction: column;
+	}
+
+
+	#findUs{
+		text-align: center;
+		align-items: center;
+		align-content: center;
+	}
+
+	#findUs h2{
+		text-align: center;
+		align-content: center;
+	}
+
+	#findUs p{
+		text-align: center;
+	}
+}
+/*end of media responsiveness*/

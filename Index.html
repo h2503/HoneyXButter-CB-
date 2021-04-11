@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<meta author="Coding.bn-pod7">
 	<title>HoneyXButter</title>
@@ -24,7 +24,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
   				<a class="navbar-brand" href="#"><h1>Honey<span>X</span>butter</h1></a>
   				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
+    			<span class="navbar-toggler-icon rotate"></span>
   				</button>
 
   			<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,6 +41,9 @@
       				
       				<li class="nav-item">
         				<a class="nav-link" href="#findUs">Find Us,</a>
+      				</li>
+      				<li class="nav-item" id="feedbackNavi" data-toggle="modal" data-target="#feedbackModal">
+        				<a href="#id01">Any Feedback?!</a>
       				</li>
       				<button type="button" id="orderNowBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">ORDER NOW!</button>
 				</ul>		
@@ -154,7 +157,8 @@
     <div class="row justify-content-center">
         <div class="col-lg-7 p-5">
             <h3>Our <span id="signature">Menu<span></h3>
-            <img src="img/menu.jpg" class="img-fluid w-40 justify-content-center" download="HxBMenu"><!--downloadable pdf-->
+            <img id="menujpg" src="img/menu.jpg" class="img-fluid justify-content-center">
+            <button class="menuDownload" onclick="save()">Download Menu</i></button>
         </div>
     </div>
             
@@ -178,13 +182,15 @@
             <span class="text-light">Extra Spicy HxB</span>
         </div>
     </div>
-    <div class="row justify-content-center pb-4">
-    <button id="orderNowBtn" type="button" class="btn btn-info btn-lg openmodal" data-toggle="modal" data-target="#feedback">ANY FEEDBACK?!</button>
-    </div>
+    <div class="row">
+    	<div class="popup-btn" id="feedbackFixed" data-toggle="modal" data-target="#feedbackModal">
+			<a href="#id01">Any Feedback?!</a>
+		</div>
+	</div>
 </div>
 
 
-
+<!-- MODALS COMPONENTS-->
 <!--modal to open modals-->
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -581,7 +587,7 @@
 
 
 <!--feedback modal-->
-<div id="feedback" class="modal fade" role="dialog">
+<div id="feedbackModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header d-flex justify-content-center bg-dark text-white">
@@ -644,12 +650,13 @@
 				</div>
 				<div class="row mt-3">
 					<div class="col copyright text-center" id="copyright">
-						<p><small class="text-white-50 text-center">All Rights Reserved &copy; Sambal Factory Enterprise 2021</small></p>
+						<p><small class="text-white text-center">All Rights Reserved &copy; Sambal Factory Enterprise 2021</small></p>
 					</div>
 				</div>
-			</div>
+			</div>	
 		</div>
 	</footer>
+	
 </section>
 
 
